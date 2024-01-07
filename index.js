@@ -66,5 +66,7 @@ module.exports.fastifyRequestContext = fastifyRequestContext
 
 module.exports.requestContext = requestContext
 
+module.exports.asyncLocalStorage = asyncLocalStorage
+
 // Deprecated
 module.exports.fastifyRequestContextPlugin = fastifyRequestContext
