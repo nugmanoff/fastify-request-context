@@ -1,4 +1,4 @@
-import { AsyncResource } from 'async_hooks'
+import { AsyncResource, AsyncLocalStorage } from 'async_hooks'
 import { FastifyPluginCallback, FastifyRequest } from 'fastify'
 
 type FastifyRequestContext =
@@ -63,6 +63,8 @@ declare namespace fastifyRequestContext {
    * @deprecated Use fastifyRequestContext instead
    */
   export const fastifyRequestContextPlugin: FastifyRequestContext
+
+  export const asyncLocalStorage: AsyncLocalStorage
 
   export const fastifyRequestContext: FastifyRequestContext
   export { fastifyRequestContext as default }
